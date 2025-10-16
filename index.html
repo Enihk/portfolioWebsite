@@ -2,63 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Porfolio Website</title>
-    <link rel="Stylesheet" href="style.css">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2f9b1a80d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav>
+        <div class="logo">ZZ</div>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education-roadmap">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images?logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Porfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Student</p>
-                <h1>Hi, I'm Khaing Zin Zin</h1>
-            </div>
+        <div class="header-text">
+            <p>Student | Specialized in IT</p>
+            <h1>Hi, I'm Khaing Zin Zin</h1>
         </div>
     </div>
-    <!-------------------about----------------->
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/kzz.png" alt="Profile">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>An energy computer science student with a strong passion for learning and exploring new ideas.</p>
+                    <p>An energetic computer science student with a strong passion for learning and exploring new ideas. I love solving complex problems.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>HTML, CSS, JavaScript</span><br>Basic-Exploring</li>
-                            <li><span>C++, Python, Java</span><br>Basic-Exploring</li>
-                            <li><span>SQL, DBMS</span><br>Basic-Exploring</li>
+                            <li><span>Frontend Development</span>HTML, CSS, JavaScript - Basic </li>
+                            <li><span>Programming Languages</span>C++, Python, Java - Basic </li>
+                            <li><span>Database</span>SQL, DBMS - Basic</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Current</span><br>Student</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024-Current</span><br>B.Sc(Computer Science)</li>
+                            <li><span>Current</span>Computer Science Student - Building projects and learning new technologies</li>
                         </ul>
                     </div>
                 </div>
@@ -66,124 +60,162 @@
         </div>
     </div>
 
-    <!------------------Services-------------->
+    <div id="education-roadmap">
+        <div class="container">
+            <h1 class="subtitle">My Education Journey</h1>
+            <div class="roadmap-container">
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">1</div>
+                    <div class="roadmap-content">
+                        <h3>High School in Myanmar</h3>
+                        <p>Foundation Years</p>
+                        <ul>
+                            <li>Basic Mathematics & Science</li>
+                            <li>Introduction to Computers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">2</div>
+                    <div class="roadmap-content">
+                        <h3>B.Sc Computer Science</h3>
+                        <p>2024 - Current</p>
+                        <ul>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Web Development</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">3</div>
+                    <div class="roadmap-content">
+                        <h3>Specialization</h3>
+                        <p>Future Goals</p>
+                        <ul>
+                            <li>Data Analyst</li>
+                            <li>Data Scientist</li>
+                            <li>Front End Development</li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="services">
         <div class="container">
             <h1 class="subtitle">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web design</h2>
-                    <p>description --</p>
+                    <h2>Web Development</h2>
+                    <p>Creating beautiful and responsive websites tailored to your needs.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX design</h2>
-                    <p>description --</p>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Data Entry</h2>
+                    <p>The process of inputting, updating and managing data in a computer system or database.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App design</h2>
-                    <p>description --</p>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Know the insighht of data and analysing data.</p>
                     <a href="#">Learn more...</a>
                 </div>
             </div>
         </div>
     </div>
-    <!---------------Portfolio---------->
+
     <div id="portfolio">
         <div class="container">
-            <h1 class="subtitle">My Work</h1>
+            <h1 class="subtitle">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/BackgroundRing.png">
+                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/FY1.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it form play store</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Ecommerce Website</h3>
+                        <p>User friendly website for buying electronic fitness tools</p>
+                        <a href="https://fitnessyay.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                 <div class="work">
-                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/BackgroundRing.png">
+                <div class="work">
+                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/RF.png">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it form play store</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Machine Learning Model</h3>
+                        <p>Tech employee salary prediction - Random Forest</p>
+                        <a href="https://github.com/Enihk/Machine-Learning"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                 <div class="work">
-                    <img src="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/BackgroundRing.png">
+                <!--<div class="work">
+                    <img src="https://via.placeholder.com/300x250">
                     <div class="layer">
-                        <h3>Online Shop App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it form play store</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Stock Management System</h3>
+                        <p>Your one-stop destination for online Stock Management System.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <a href="#" class="btn">See more</a>
+            <button class="btn">See more</button>
         </div>
     </div>
-    <!-----------------contact------------>
+
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fa-solid fa-phone"></i>12345678</p>
+                    <h1 class="subtitle">Get In Touch</h1>
+                    <p><i class="fa-solid fa-envelope"></i>khinezinzin7777@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+60-146-898-632</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"></i><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#"></i><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/60146898632"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/zin-zin-2a01161a4/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="/Users/khinezinzin/Downloads/Final_Frontend/Frontendass/myResume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="#" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Mail" required>
-                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright @ Zin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+            <p>Copyright © Zin. Made with <i class="fa-solid fa-heart"></i> by Tutorials.</p>
         </div>
     </div>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }      
+function opentab(tabname){
+    for(let tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-250px";
+}
     </script>
-    <script>
-        var sidemenu = dpcument.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-
-    </script>
-    
 </body>
 </html>
